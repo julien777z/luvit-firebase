@@ -43,4 +43,4 @@ end)
 
 ``delete`` will remove an entire node
 
-``get`` will return the JSON for that node.]
+``get`` will return the JSON for that node.

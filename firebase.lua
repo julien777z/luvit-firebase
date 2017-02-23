@@ -27,26 +27,26 @@ function firebase:request(node,method,callback,content)
 end
 
 function firebase:get(node,callback)
-  self:request(node,"GET",callback)
+	self:request(node,"GET",callback)
 end
 
 function firebase:set(node,content,callback)
 	content = type(content) == "table" and json.encode(content) or content
-  self:request(node,"PUT",callback,content)
+	self:request(node,"PUT",callback,content)
 end
 
 function firebase:update(node,content,callback)
 	content = type(content) == "table" and json.encode(content) or content
-  self:request(node,"PATCH",callback,content)
+	self:request(node,"PATCH",callback,content)
 end
 
 function firebase:push(node,content,callback)
 	content = type(content) == "table" and json.encode(content) or content
-  self:request(node,"POST",callback,content)
+	self:request(node,"POST",callback,content)
 end
 
 function firebase:delete(node,callback)
-  self:request(node,"DELETE",callback)
+	self:request(node,"DELETE",callback)
 end
 
 return firebase

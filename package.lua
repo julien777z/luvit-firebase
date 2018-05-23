@@ -1,9 +1,9 @@
 return {
 	name = 'Tigerism/luvit-firebase',
-	version = '0.0.1',
+	version = '1.2',
 	homepage = 'https://github.com/Tigerism/luvit-firebase',
 	dependencies = {
-		'SinisterRectus/coro-http@2.1.1',
+		'luvit/coro-http@2.3.0',
 	},
 	tags = {'firebase', 'api', 'db', 'database'},
 	license = 'MIT',

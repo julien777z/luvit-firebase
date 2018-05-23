@@ -41,7 +41,7 @@ coroutine.wrap(function()
 
 	p(db:set('test', { test1 = 'answer1', test2 = 'answer2' })
 	p(db:get('test')
-	p(db:update('test', { test1 = 'answer100', })
+	p(db:update('test', { test1 = 'answer100' })
 	p(db:delete('test')
 end)()
 ```

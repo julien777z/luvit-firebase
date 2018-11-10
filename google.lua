@@ -22,8 +22,6 @@ local function identify(appstr, payload, key)
 	local res, body = http.request('POST', uri, { { 'Content-Type', 'application/json' }, { 'Content-Length', #datastring } }, datastring)
 	body = json.parse(body)
 
-	p(body)
-
 	local error = body.error and body.error.errors and body.error.errors[1]
 
 	if error then

@@ -1,6 +1,6 @@
 return {
 	name = 'Tigerism/luvit-firebase',
-	version = '1.2',
+	version = '1.2.1',
 	homepage = 'https://github.com/Tigerism/luvit-firebase',
 	dependencies = {
 		'luvit/coro-http@2.3.0',
